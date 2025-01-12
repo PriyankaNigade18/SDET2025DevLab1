@@ -1,0 +1,40 @@
+
+Variable Scope/Types
+==========================
+1.Local Variable:
+------------------
+Any variable declare inside method/block is called local variable
+
+scope: within method 
+Memory allocate: At the time of execution of method
+Memory deallocate: After method execution
+
+2.Instance variable
+---------------------------
+any variable declare inside the class outside the method/block 
+is called instance variable
+
+Scope: Within Object
+Memory allocation: At the time of Object creation
+Memory deallocation: After Object execution
+note: Instance variable will get the new memory once you create new Object
+To call instance data we need Object
+
+3.static variable
+------------------------
+any variable declare inside the class outside the method/block 
+with static keyword is called static variable
+
+Scope: Within Class
+Memory allocation: At the time of class loading
+Memory deallocation: After class unloaded
+
+To call static data we don't need any object
+note:static variable shares common memory with all objects
+
+Wrapper class remaining!
+
+
+
+
+
