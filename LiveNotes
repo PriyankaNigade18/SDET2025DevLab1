@@ -34,6 +34,15 @@ note:static variable shares common memory with all objects
 
 Wrapper class remaining!
 
+Static Block
+=================
+Static block is used to initialize static variable
+Static block is having first priority
+
+
+
+
+
 
 
 

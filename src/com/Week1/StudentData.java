@@ -3,8 +3,8 @@ package com.Week1;
 public class StudentData
 {
 	//data
-	int id;
-	String name;
+	public int id;
+	public String name;
 	
 	//method
 	public void show()
