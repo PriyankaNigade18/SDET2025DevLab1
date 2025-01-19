@@ -39,6 +39,12 @@ Static Block
 Static block is used to initialize static variable
 Static block is having first priority
 
+this keyword
+================
+1.this keyword help you to differentiate local and instance variable
+2.this help to call method
+3.this help to call any constructor
+4.this is used to return current instance from method-Builder pattern
 
 
 
