@@ -47,6 +47,36 @@ this keyword
 4.this is used to return current instance from method-Builder pattern
 
 
+==================================================
+Loop
+=================
+for loop:
+Number of iterations are known
+
+Scenarios:
+=============
+- Automation Menu/dropdown
+- Calendar(days 30,31,28,29)
+
+
+while loop
+===================
+entry control loop
+number of iterations are not known/unknown
+
+Scenarios:
+=================
+- list with dynamic count of elements
+- pegination(dynamic pages)
+
+do-while loop
+==============
+exit control loop
+one time executing
+
+
+one time we are expecting result without matter what condition it is
+
 
 
 
