@@ -1,0 +1,54 @@
+
+Selenium WebDriver
+=====================
+-Selenium WebDriver is an interface
+-WebDriver is an API for webUi automation testing
+=======================================================
+Project Setup for Selenium
+=======================
+1.Using Java project
+2.Maven Project
+
+Java Project
+===========================
+1.create a new Java Project
+2.Download selenium jar from selenium.dev
+3.right click on project-->build path--->configure build path 
+--->libraries-->class path--->add external libraries
+
+Maven Project
+====================
+Build Management+Project Management Tool
+
+POM.xml file
+========================
+Project object model this is configuration file for maven Project
+
+1.Dependecy
+====================
+2.Plugins
+
+
+<project>
+
+<dependencies>
+
+<dependency>selenium-java</dependency>
+
+</dependencies>
+
+
+
+</project>
+
+=================================================
+
+
+
+
+
+
+
+
+
+
