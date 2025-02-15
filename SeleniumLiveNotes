@@ -1,0 +1,182 @@
+
+Selenium WebDriver
+=====================
+-Selenium WebDriver is an interface
+-WebDriver is an API for webUi automation testing
+=======================================================
+Project Setup for Selenium
+=======================
+1.Using Java project
+2.Maven Project
+
+Java Project
+===========================
+1.create a new Java Project
+2.Download selenium jar from selenium.dev
+3.right click on project-->build path--->configure build path 
+--->libraries-->class path--->add external libraries
+
+Maven Project
+====================
+Build Management+Project Management Tool
+
+POM.xml file
+========================
+Project object model this is configuration file for maven Project
+
+1.Dependecy
+====================
+2.Plugins
+
+
+<project>
+
+<dependencies>
+
+<dependency>selenium-java</dependency>
+
+</dependencies>
+
+
+
+</project>
+
+=================================================
+
+9552671595
+
+Selenium WebDriver Browser Commands
+=====================================
+1.get(url): open application
+2.getTitle(): get the current application title
+3.getCurrentUrl(): get the current url of application
+4.getPageSource(): get the source code
+Multiple window handling
+-------------------------
+5.getWindowHandle()
+6.getWindowHandles()
+
+7.close(): close current active window/session
+8.quit(): close all open windows by selenium
+
+Selenium Navigation commands
+=================================
+Selenium support Navigation Interface
+
+1.to(url):Navigate to application
+-------------------------------
+driver.navigate().to(url)
+
+2.back()
+-----------------
+driver.navigate().back()
+
+3.forward()
+---------------
+driver.navigate().forward()
+
+4.refresh()
+---------------------
+driver.navigate().refresh()
+
+
+===============================================
+What is WebElement in Selenium
+===============================
+Any GUI element from application is called WebElement
+Technically WebElement is interface in Selenium
+
+How to automate any WebElement
+================================
+1.Get the address of WebElement form the WebPage(Identification)
+2.Perform action on WebElement
+
+How to identify WebElement
+==============================
+Selenium Support Locators to identify WebElement
+
+What is Locator?
+===================
+Locator is address of WebElement from WebPage
+
+Selenium Support total 8 locators
+===============================
+1.By id (primary)
+2.By name
+3.By className
+4.By linkText
+5.By partialLinkText
+6.By tagName
+
+Dynamic Locator
+==================
+7.By cssSelector
+8 By xpath
+
+Selenium 4 support Relative locators
+-----------------------------------------
+For Identifications selenium support two methods
+------------------------------------------------
+1.findElement()
+
+2.findElements()
+
+==================================
+WebElement Validation Methods
+=============================
+1.isDisplayed()
+2.isEnabled()
+3.isSelected()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
