@@ -118,8 +118,17 @@ Selenium 4 support Relative locators
 For Identifications selenium support two methods
 ------------------------------------------------
 1.findElement()
+----------------------
+- findElement() identify Single webElement
+- it returns WebElement interface object
+- If element not found then it throws exception NoSuchElementException
 
 2.findElements()
+------------------------
+- findElements() identify multiple webElements
+- it returns List<WebElement> interface object
+- If element not found then will not throw any exception you will get empty list
+
 
 ==================================
 WebElement Validation Methods
@@ -127,6 +136,223 @@ WebElement Validation Methods
 1.isDisplayed()
 2.isEnabled()
 3.isSelected()
+
+==========================================
+How to automate any hyperlink
+===========================
+<a id="SignIn" name="sign-in-link">Sign In</a>
+							<a> link text </a>
+
+1.linkText(full text)
+---------------------------
+Sign In
+
+2.partialLinkText(partial text)
+-------------------------------
+In
+Sign
+
+=================================================
+Synchronization Issue in Selenium
+================================
+Whenever there is time mapping problem between application and tool
+
+Selenium Support Dynamic Waits
+=================================
+1.Implicit
+================
+- It is global wait applicable to all webelements
+
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+
+2.Explicit Wait
+======================
+- It is applicable to single webelement
+- As per webelement validation we can implement this wait
+
+WebDriverWait class
+FluentWait class
+
+WebDriverWait(c) extends FluentWait(c) implements Wait(I)
+=================================================================
+By className
+=====================
+oxd-button oxd-button--medium oxd-button--main orangehrm-login-button
+ c1               c2                 c3             c4
+
+InvalidSelectorException: Compound class names not permitted
+=============================================
+By tagName
+===============
+Number of input boxes
+Number of links
+Number images
+
+========================================
+WebElement Methods
+=================
+1.getText()
+==============
+- To get any visible text use it
+- to get inner html text
+
+2.getAttribute()--->4.28.0 it is deprecated--->getDomAttribute()
+================================================
+- to get any attribute value
+
+
+Dynamic locators
+=====================
+1.cssSelector
+--------------------
+Css is Cascaded style sheet language we use in html to provide style to webElement
+
+CSSSelector
+-------------
+-This is locator to identify webelement based on css properties
+-CssSelector travel in one direction (parent node to child node)
+- CssSelector is faster than xpath
+- cssSelector doesnt have any method support
+
+#input-email
+
+1.tagname with id
+-------------------
+Syntax
+===========
+tagname#id
+
+<input id="input-email">
+
+input#input-email------1 of 1
+
+2.tagname with attribute
+----------------------
+Syntax
+===========
+tagname[attribute='value']
+
+input[placeholder='Password']
+
+3.tagname with classname
+----------------------------
+Syntax
+=======
+tagname.classname
+
+input.btn.btn-primary
+
+4.tagname with id,classname and attribute
+--------------------------------------------
+Syntax
+=============
+tagname#id.classname[attribute='value']
+
+input.btn.btn-primary[value='Login']
+
+prefix 
+-======
+^- startswith
+input[id^='input-e']  1 of 1
+
+$- endswith
+input[id$='email']
+
+*-contains
+input[id*='put-e']
+
+=======================================================
+By Xpath
+=============
+- xpath is path of element from any html or xml document
+- xpath identify elements from DOM(document object model)
+- xpath travel in both direction 
+- xpath support multiple methods
+- xpath axies we can interact DOM
+
+--------HTML DOM----------
+
+<html>--------------root element/node
+<head>
+<head>
+
+<body>
+<a>
+<div>----------------element
+<input>
+</body>
+
+</html>
+=======================================
+XPath Types
+=============
+1.Absolute Xpath
+=================
+- It identify element form root node
+- It starts with '/'
+
+/html/body/div[2]/div/div/div/div[2]/div/form/div[1]/input
+
+2.Relative Xpath
+==================
+- Relative xpath identify element from its relative property
+- It starts with '//'
+
+//*[@id="input-email"]
+
+*: any tag
+
+================================
+Syntax
+===========
+//tagname[@attribute='value']
+
+================================
+xpath with indexing and position
+
+
+Xpath methods
+====================
+1.text()
+
+2.normalize-space()
+
+
+3.contains()
+
+4.starts-with()
+
+
+Xpath Axies
+====================
+
+
+
+Relative locators
+======================
+above()
+below()
+toLeftOf()
+toRightOf()
+
+====================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.Xpath
 
 
 
