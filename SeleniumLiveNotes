@@ -311,32 +311,170 @@ Syntax
 ================================
 xpath with indexing and position
 
+(xpath)[index]
+or
+(xpath)[position()=index]
 
+====================================================
 Xpath methods
 ====================
 1.text()
+===========
+- text() identify element based visible text
+- text() never ignore white space
+ 
+Syntax:
+===========
+//tagname[text()='text']
+
 
 2.normalize-space()
+========================
+- identify element based visible text
+- ignore white space 
+
+Syntax:
+===========
+//tagname[normalize-space()='text']
+
+3.contains():partial match
+===============================
+Syntax:
+===========
+//tagname[contains(@attribute,'partial value')]
+
+//input[contains(@id,'searcht')]
+
+or
+
+//tagname[contains(text(),'partial text')]
+
+4.starts-with():prefix value
+=======================================
+Syntax:
+===========
+//tagname[starts-with(@attribute,'partial value')]
 
 
-3.contains()
+or
 
-4.starts-with()
+//tagname[starts-with(text(),'partial text')]
 
-
+//input[starts-with(@id,'twotab')]
+=========================================================
 Xpath Axies
 ====================
+1.ancestor
+=============
+syntax:
+==========
+//tagname[@attribute1='value']//ancestor::tagname of ancestor
 
 
+2.parent
+=============
+syntax:
+==========
+//tagname[@attribute1='value']//parent::tagname of parent
 
-Relative locators
-======================
+
+3.child
+=============
+syntax:
+==========
+//tagname[@attribute1='value']//child::tagname of child
+
+
+4.following
+=============
+syntax:
+==========
+//tagname[@attribute1='value']//following::tagname of following ele
+
+
+5.Preceding
+=============
+syntax:
+==========
+//tagname[@attribute1='value']//preceding::tagname of preceding ele
+
+
+6.following sibling
+=============
+syntax:
+==========
+//tagname[@attribute1='value']//following-sibling::tagname of following sibling ele
+
+7.preceding sibling
+=============
+syntax:
+==========
+//tagname[@attribute1='value']//preceding-sibling::tagname of following sibling ele
+
+selenium 4 Relative locators
+============================
 above()
 below()
 toLeftOf()
 toRightOf()
 
 ====================================================
+
+TestNG
+===========
+unit testing framework
+- by default reporting 
+- manage test cases
+
+dropdown element
+=======================
+1.Select tag based dropdown
+--------------------------------
+Selenium support Select class
+Select s1=new Select(dropdown address)
+
+Is dropdown support multiple selection?
+----------------
+isMultiple():boolean
+
+select single option
+--------------------
+1.selectByVisibleText()
+2.selectByIndex()
+3.selectByValue()
+
+get all options
+--------------------
+getOptions()
+===========================================
+2.Bootstrap/javascript/autosuggestion 
+-------------------------------------
+xpath
+
+===========================================
+ 
+ multiple Windows
+ 
+ WebTable
+ 
+ Actions class
+ 
+ alert
+ 
+ frame
+ 
+ Frameworks
+ ================
+ 1.testng
+ 
+ 2.cucumber
+ 
+ 3.Hybrid 
+ 
+ 
+ 
+
+
 
 
 
