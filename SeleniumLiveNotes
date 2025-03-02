@@ -452,20 +452,65 @@ getOptions()
 xpath
 
 ===========================================
+ Multiple Windows
+===================
+getWindowHandle():String
+getWindowHandles():Set<String>
+switchTo().target(alert/frame/window)
+
+Selenium 4 
+====================
+How to open any new tab or new Window
+-----------------------------------------
+newWindow()
+
+WebDriver driver2=driver.switchTo().newWindow(WindowType.TAB);
+
+WebDriver driver2=driver.switchTo().newWindow(WindowType.WINDOW);
+========================================================================
+Alert Handling
+======================
+Selenium Provides Alert interface to handle alert
+
+Types
+=========
+1.Basic Alert--->OK button
+2.Confirmation Alert---->OK Cancel
+3.Prompt type alert
+
+Alert Interface support 4 method
+----------------------------------
+1.OK--->accept()
+2.Cancel---->dismiss()
+3.To get the text of alert- getText()
+4.send data--->sendKeys() 
+=============================================
+ Frame Handling
+ =================
+ One html document embeded into other html documnet is called Frame
+ <frame>
+ <iframe>
  
- multiple Windows
  
+ driver.switchTo().frame(index)
+  driver.switchTo().frame(id/name)
+   driver.switchTo().frame(frame WebElement)
+ 
+========================================================== 
  WebTable
+ 
+ JavascriptExecutor Interface
+ 
  
  Actions class
  
- alert
- 
- frame
+
  
  Frameworks
  ================
  1.testng
+ 
+ Page Object Model
  
  2.cucumber
  

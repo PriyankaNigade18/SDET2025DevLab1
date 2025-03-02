@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-23T22:47:05 IST" name="Default suite" finished-at="2025-02-23T22:47:11 IST" duration-ms="6663">
+  <suite started-at="2025-03-02T22:37:30 IST" name="Default suite" finished-at="2025-03-02T22:37:34 IST" duration-ms="4089">
     <groups>
     </groups>
-    <test started-at="2025-02-23T22:47:05 IST" name="Default test" finished-at="2025-02-23T22:47:11 IST" duration-ms="6663">
-      <class name="com.WebelementHandling.AutosuggestionDropdown_Goibibo">
-        <test-method signature="testDropdown()[pri:0, instance:com.WebelementHandling.AutosuggestionDropdown_Goibibo@2fb3536e]" started-at="2025-02-23T22:47:05 IST" name="testDropdown" finished-at="2025-02-23T22:47:11 IST" duration-ms="6615" status="PASS">
+    <test started-at="2025-03-02T22:37:30 IST" name="Default test" finished-at="2025-03-02T22:37:34 IST" duration-ms="4089">
+      <class name="com.WebelementHandling.IframeHandlingDemo2">
+        <test-method signature="testFrame()[pri:0, instance:com.WebelementHandling.IframeHandlingDemo2@3b6ddd1d]" started-at="2025-03-02T22:37:30 IST" name="testFrame" finished-at="2025-03-02T22:37:34 IST" duration-ms="4041" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDropdown -->
-      </class> <!-- com.WebelementHandling.AutosuggestionDropdown_Goibibo -->
+        </test-method> <!-- testFrame -->
+      </class> <!-- com.WebelementHandling.IframeHandlingDemo2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

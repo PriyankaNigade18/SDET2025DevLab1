@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebelementHandling.AutosuggestionDropdown_Goibibo">
+      <class name="com.WebelementHandling.IframeHandling">
         <methods>
-          <include name="testDropdown"/>
+          <include name="testFrame"/>
         </methods>
-      </class> <!-- com.WebelementHandling.AutosuggestionDropdown_Goibibo -->
+      </class> <!-- com.WebelementHandling.IframeHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
