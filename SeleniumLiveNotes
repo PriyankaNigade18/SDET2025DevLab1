@@ -497,14 +497,43 @@ Alert Interface support 4 method
    driver.switchTo().frame(frame WebElement)
  
 ========================================================== 
- WebTable
- 
- JavascriptExecutor Interface
- 
- 
- Actions class
- 
+WebTable
+===============
+1.Static table
+2.Dynamic table
+3.Pagination
 
+======================================================
+JavascriptExecutor Interface
+ ========================
+ 1.Scroll 
+ 2.title
+ 3.page refresh
+ 4.click
+ 
+ Special Scenarios
+ =====================
+ 1.SVG elment(Screen vector graphics)
+ ------------------
+ -It only works with Xpath
+ -local-name() or name()
+ 
+ 2.ShadowDom
+ ================
+ - HRML Dom inside another html dom is called Shadow dom
+ -CssSelector works with shadowDom(xpath will not work)
+ 
+ shadow host--->root--->element
+ 
+ 
+ 3.Find Broken Links form the page
+ 
+Actions class(Mouse Operation)
+=========================
+ 
+Waits In Selenium
+
+TakesScreenshot Interface
  
  Frameworks
  ================

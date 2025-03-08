@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebelementHandling.IframeHandling">
+      <class name="com.SpecialScenario.BrokenLinkAutomation">
         <methods>
-          <include name="testFrame"/>
+          <include name="testBrokenLink"/>
         </methods>
-      </class> <!-- com.WebelementHandling.IframeHandling -->
+      </class> <!-- com.SpecialScenario.BrokenLinkAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
