@@ -510,6 +510,8 @@ JavascriptExecutor Interface
  2.title
  3.page refresh
  4.click
+ 5 Hidden Element 
+ ================
  
  Special Scenarios
  =====================
@@ -524,20 +526,77 @@ JavascriptExecutor Interface
  -CssSelector works with shadowDom(xpath will not work)
  
  shadow host--->root--->element
- 
- 
+ ======================================= 
  3.Find Broken Links form the page
+ ===============================================
  
 Actions class(Mouse Operation)
 =========================
  
 Waits In Selenium
+======================
+Default timeout 
+-------------------
+timeouts={implicit=0, pageLoad=3,00000, script=30000}
+1.implicit Wait=0
+2.PageLoadTimeOut=3L==>300sec===>5mins
+3.ScriptTimeOut=30000ms==>30sec
+
+
+Synchronization Issue in Selenium
+================================
+Whenever there is time mapping problem between application and tool
+
+Selenium Support Dynamic Waits
+=================================
+1.Implicit
+================
+- It is global wait applicable to all webelements
+
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+
+2.Explicit Wait
+======================
+- It is applicable to single webelement
+- As per webelement validation we can implement this wait
+
+WebDriverWait class
+FluentWait class
+
+WebDriverWait(c) extends FluentWait(c) implements Wait(I)
+
+===========================================================
+Capabilities
+======================
+Capabilities are options that you can use to customize and configure a ChromeDriver session. 
+
+Chrome==>ChromeOptions class
+Firefox===>FirefoxOptions class
+Edge====>EdgeOptions class
+
 
 TakesScreenshot Interface
+
+
+
  
- Frameworks
- ================
- 1.testng
+Frameworks
+================
+ 1.Testng
+ ===============
+ How to disable any test from execution
+ -----------------------------
+ 1.Using enabled=false argument
+ 2.Using xml file
+ 	<exclude method>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  Page Object Model
  

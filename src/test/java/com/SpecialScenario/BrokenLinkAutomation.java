@@ -62,6 +62,10 @@ public class BrokenLinkAutomation
 		  {
 			  System.out.println(hrefValue+"========== Broken link=========");
 			  brokencount++;
+		  }else
+		  {
+			  System.out.println(hrefValue+"  Valid link");
+
 		  }
 		  
 		  }catch(Exception e)

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SpecialScenario.BrokenLinkAutomation">
+      <class name="com.TestNG.BasicScenario.AssertionInTestNG">
         <methods>
-          <include name="testBrokenLink"/>
+          <include name="softAssertionTest"/>
         </methods>
-      </class> <!-- com.SpecialScenario.BrokenLinkAutomation -->
+      </class> <!-- com.TestNG.BasicScenario.AssertionInTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
