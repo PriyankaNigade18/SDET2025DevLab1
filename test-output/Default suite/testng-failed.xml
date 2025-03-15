@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.BasicScenario.AssertionInTestNG">
+      <class name="com.TestNG.DataDrivenTesting.HRMLoginForDataDriven">
         <methods>
-          <include name="softAssertionTest"/>
+          <include name="testHrm" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- com.TestNG.BasicScenario.AssertionInTestNG -->
+      </class> <!-- com.TestNG.DataDrivenTesting.HRMLoginForDataDriven -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

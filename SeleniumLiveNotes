@@ -591,7 +591,33 @@ Frameworks
  2.Using xml file
  	<exclude method>
  
+ Annotations(rule)
+ ==================
+ <suite>
+ <test>
+ <classes>
+ <class name="A">
+ <method>TestCase1</method>
+ </class>
+ </classes>
+ </test>
+ </suite>
  
+ ============================
+ To read Data 
+ ============
+ 1.testNg.xml (@Parameters)
+ 2.Properties File(to create Object Repository in selenium)
+ 
+ DataDriven Testing
+ =======================
+ Executing same set of actions with Multiple set of data, multiple time
+ is called data driven testing
+ 
+ @DataProvider
+ 
+ 1.Using array
+ 2.Using Excel File
  
  
  
