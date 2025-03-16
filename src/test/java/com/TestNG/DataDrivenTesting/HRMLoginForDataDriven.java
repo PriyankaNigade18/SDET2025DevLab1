@@ -10,8 +10,9 @@ import org.testng.annotations.Test;
 
 public class HRMLoginForDataDriven
 {
-  @Test(dataProvider ="appdata",dataProviderClass =CustomData.class)
-  public void testHrm(String un,String psw) 
+  //@Test(dataProvider ="appdata",dataProviderClass =CustomData.class) array
+  @Test(dataProvider ="excelfile",dataProviderClass =CustomData.class)
+  public void testHrm(String un,String psw) throws InterruptedException 
   {
 	  WebDriver driver=new ChromeDriver();
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -19,6 +20,7 @@ public class HRMLoginForDataDriven
 	  driver.findElement(By.name("username")).sendKeys(un);
 	  driver.findElement(By.name("password")).sendKeys(psw);
 	  driver.findElement(By.xpath("//button[@type='submit']")).click();
+	  Thread.sleep(1500);
 	  
 	  
 	  Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"),"Login Fail!");

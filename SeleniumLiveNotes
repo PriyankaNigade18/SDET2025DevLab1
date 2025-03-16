@@ -619,12 +619,19 @@ Frameworks
  1.Using array
  2.Using Excel File
  
+ Apache POI
+ =================
+ XSSFWorkbook
+ XSSFSheet
+ XSSFRow
+ XSSFCell
  
- 
- 
- 
- 
- Page Object Model
+ ===================================
+  Page Object Model
+  ========================
+  This is design pattern to maintain and improve readability of the code
+  1.Page Object Using By locator
+  2.Page Object Using PageFactory class
  
  2.cucumber
  
