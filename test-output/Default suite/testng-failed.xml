@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.PageObjectModelUsingByLocator.LoginPageTest">
+      <class name="com.TestNG.DataDrivenTesting.TestExcelFile">
         <methods>
-          <include name="validateUrl"/>
-          <include name="setUp"/>
+          <include name="readSingleData"/>
         </methods>
-      </class> <!-- com.TestNG.PageObjectModelUsingByLocator.LoginPageTest -->
+      </class> <!-- com.TestNG.DataDrivenTesting.TestExcelFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

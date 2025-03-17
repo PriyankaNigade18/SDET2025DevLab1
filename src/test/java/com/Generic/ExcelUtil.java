@@ -89,9 +89,35 @@ public class ExcelUtil {
 	
 	public static String getData(String sheetname,int row,int cell)
 	{
-		XSSFCell cells=wb.getSheet(sheetname).getRow(row).getCell(cell);
+		FileInputStream fs;
+		XSSFWorkbook wb;
+		XSSFCell cells=null;
+		String data="";
+		try {
+		File f1=new File("./"+"\\TestData\\Data.xlsx");
+		 fs=new FileInputStream(f1);
+		wb=new XSSFWorkbook(fs);
+		cells=wb.getSheet(sheetname).getRow(row).getCell(cell);
 		
-		return cells.getStringCellValue();
+		if(cells.getCellType()==CellType.STRING)
+		{
+			data=cells.getStringCellValue();
+		}else if(cells.getCellType()==CellType.NUMERIC)
+		{
+			int dd=(int) (cells.getNumericCellValue());
+			
+			data=String.valueOf(dd);
+			
+		}else if(cells.getCellType()==CellType.BLANK)
+		{
+			data=" ";
+		}		
+		}catch(Exception e)
+		{
+			
+		}
+		
+		return data;
 	}
 
 }
