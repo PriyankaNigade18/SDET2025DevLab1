@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests">
+  <test name="chromeTest">
+  <parameter name="bname" value="chrome"></parameter>
+    <classes>
+      <class name="com.SwagLab.TestCases.Test1_Login"/>
+     <class name="com.SwagLab.TestCases.Test2_Inventory"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="EdgeTest">
+  <parameter name="bname" value="edge"></parameter>
+    <classes>
+      <class name="com.SwagLab.TestCases.Test1_Login"/>
+     <class name="com.SwagLab.TestCases.Test2_Inventory"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test  name="FirefoxText">
+  <parameter name="bname" value="firefox"></parameter>
+    <classes>
+      <class name="com.SwagLab.TestCases.Test1_Login"/>
+     <class name="com.SwagLab.TestCases.Test2_Inventory"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
