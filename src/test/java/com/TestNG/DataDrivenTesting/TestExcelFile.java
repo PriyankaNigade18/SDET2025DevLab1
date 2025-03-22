@@ -21,7 +21,7 @@ public class TestExcelFile {
 @Test(priority=1)
 public void readSingleData()
 {
-	String author=ExcelUtil.getData("Books",2,2);
+	String author=ExcelUtil.getData("Books",2,1);
 	System.out.println(author);
 }
 

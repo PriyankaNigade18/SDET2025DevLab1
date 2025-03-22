@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.DataDrivenTesting.TestExcelFile">
+      <class name="com.TestNG.TestListeners.CrmTestForListener">
         <methods>
-          <include name="readSingleData"/>
+          <include name="setUp"/>
+          <include name="testLogin"/>
+          <include name="testSignOut"/>
         </methods>
-      </class> <!-- com.TestNG.DataDrivenTesting.TestExcelFile -->
+      </class> <!-- com.TestNG.TestListeners.CrmTestForListener -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
