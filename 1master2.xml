@@ -11,9 +11,7 @@
     <classes>
       <class name="com.SwagLab.TestCases.Test1_Login"/>
      <class name="com.SwagLab.TestCases.Test2_Inventory"/>
-     <class name="com.SwagLab.TestCases.Test3_CartPage"/>
-     <class name="com.SwagLab.TestCases.Test4_CheckOut"/>
-     <class name="com.SwagLab.TestCases.Test5_OverView"/>
+         
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

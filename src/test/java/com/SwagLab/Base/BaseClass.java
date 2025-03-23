@@ -1,18 +1,22 @@
 package com.SwagLab.Base;
 
 import java.time.Duration;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 
 import com.SwagLab.Pages.*;
 import com.SwagLab.Utility.*;
 
+@Listeners(ChainTestListener.class)
 public class BaseClass 
 {
 	public WebDriver driver;
@@ -64,6 +68,20 @@ public class BaseClass
 		driver.quit();
 	}
 	
+	//for all fail test get the screenshot
+	@AfterMethod
+	public void attachScreenshot(ITestResult result)
+	{
+		if(!result.isSuccess())
+		{
+			ChainTestListener.embed(getScreenshot(),"image/png");
+		}
+	}
 	
+	
+	public byte[] getScreenshot()
+	{
+		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+	}
 	
 }

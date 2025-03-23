@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import com.SwagLab.Base.BaseClass;
 import com.SwagLab.Utility.ExcelUtil;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 
 public class Test1_Login extends BaseClass
 {
@@ -16,7 +17,8 @@ public class Test1_Login extends BaseClass
 	public void validateUrl()
 	{
 		String actUrl=lp.getAppUrl();
-		AssertJUnit.assertTrue(actUrl.contains("demo"));
+		ChainTestListener.log("Actual url us==="+actUrl);
+		Assert.assertTrue(actUrl.contains("demo"));
 		System.out.println("Url Matched.."+actUrl);
 	}
 	
@@ -24,7 +26,8 @@ public class Test1_Login extends BaseClass
 	public void validateTitle()
 	{
 		String actTitle=lp.getAppTitle();
-		AssertJUnit.assertEquals(actTitle,"Swag Labs");
+		ChainTestListener.log("Actual title is====="+actTitle);
+		Assert.assertEquals(actTitle,"Swag Labs");
 		System.out.println("Title matched...."+actTitle);
 		
 	}
@@ -46,7 +49,8 @@ public class Test1_Login extends BaseClass
 	  
 	  lp.doLogin(prop.getData("un"),prop.getData("psw"));
 	  addWait();
-	  AssertJUnit.assertTrue(lp.getAppUrl().contains("inventory"));
+	  ChainTestListener.log("Testing Login with valid credentials");
+	  Assert.assertTrue(lp.getAppUrl().contains("inventory"));
 	  System.out.println("Login Successfull!");
   }
 }

@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.SwagLab.Base.BaseClass;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 
 public class Test2_Inventory extends BaseClass
 {
@@ -22,7 +23,9 @@ public class Test2_Inventory extends BaseClass
   public void validateProductCount()
   {
 	  int count=ip.getProductCount();
-	  AssertJUnit.assertEquals(count,6);
+	  ChainTestListener.log("Testing product count....");
+	  Assert.assertEquals(count,6);
+	  
 	  System.out.println("Count Matched....Total Products are: "+count);
   }
   
