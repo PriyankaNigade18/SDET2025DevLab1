@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.TestListeners.CrmTestForListener">
+      <class name="com.SeleniumGrid.FirstGridTestCase">
         <methods>
-          <include name="setUp"/>
-          <include name="testLogin"/>
-          <include name="testSignOut"/>
+          <include name="testGrid"/>
         </methods>
-      </class> <!-- com.TestNG.TestListeners.CrmTestForListener -->
+      </class> <!-- com.SeleniumGrid.FirstGridTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
