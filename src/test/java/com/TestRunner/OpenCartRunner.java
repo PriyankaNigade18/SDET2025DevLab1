@@ -7,7 +7,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/FeatureFiles/OpenCart.feature",
-					glue="com.stepdef")
+					glue="com.stepdef",
+					//plugin={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+					plugin = { 
+							"com.aventstack.chaintest.plugins.ChainTestCucumberListener:" 
+									}
+					)
 public class OpenCartRunner {
 
 }
