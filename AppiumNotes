@@ -1,10 +1,18 @@
 https://www.simplilearn.com/enable-virtualization-windows-10-article
 
+9552671595
 
 Step1: Install nodejs
 https://nodejs.org/en/download
 
 
+driver capabilities
+======================
+https://github.com/appium/appium-uiautomator2-driver?#capabilities
+
+Gestures Link
+=============
+https://github.com/appium/appium-uiautomator2-driver/blob/2d02006eaf1e5a62acfbc36a5bc5a9ea271cf7cd/docs/android-mobile-gestures.md
 
 
 Commands
@@ -26,6 +34,7 @@ npm uninstall -g Appium
 
 To start appium server
 	appium
+	
 To stop/quit server
 	ctrl+c
 
@@ -116,13 +125,6 @@ appium Link
 ==============
 https://appium.io/docs/en/2.4/
 
-driver capabilities
-======================
-https://github.com/appium/appium-uiautomator2-driver?#capabilities
-
-Gestures Link
-=============
-https://github.com/appium/appium-uiautomator2-driver/blob/2d02006eaf1e5a62acfbc36a5bc5a9ea271cf7cd/docs/android-mobile-gestures.md
 
 
 
